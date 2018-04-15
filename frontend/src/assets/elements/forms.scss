@@ -1,0 +1,100 @@
+.input,
+.textarea {
+  transition: 0.2s border ease-in;
+  font-size: 14px;
+  font-weight: 300;
+
+  &:focus {
+    border-color: $primary;
+    outline: 0;
+  }
+}
+
+.input {
+  width: 100%;
+  max-width: 500px;
+  padding: 5px 2px;
+  border: 0;
+  border-bottom: 1px solid $gray200;
+}
+
+.external-input {
+  width: 100%;
+  padding: 7px 0.5rem;
+  border: 1px solid $gray200;
+  font-size: 14px;
+  font-weight: 300;
+
+  &::placeholder {
+    color: $gray400;
+  }
+
+  &:focus {
+    border-color: $primary;
+    outline: 0;
+  }
+}
+
+.textarea {
+  width: 100%;
+  height: auto;
+  transition: height 0.2s ease-in;
+  border: 0;
+  border-bottom: 1px solid $gray200;
+  resize: none;
+
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.form-group {
+  .input-error {
+    display: none;
+  }
+}
+
+.form-group-error {
+  .external-input,
+  .input,
+  .textarea {
+    border-bottom: 1px solid $red;
+  }
+
+  .input-error {
+    display: block;
+  }
+}
+
+.float-label-container {
+  position: relative;
+  margin: 1rem 0 .5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.float-label {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  left: 0.1em;
+  transform-origin: top left;
+  transition: transform .2s ease-in, color .2s ease-in;
+  color: $gray400;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+
+  &.active {
+    transform: translateY(-.9rem) scale(.7);
+    pointer-events: all;
+  }
+
+  &.focus {
+    color: $primary;
+  }
+}

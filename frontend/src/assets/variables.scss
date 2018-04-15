@@ -1,0 +1,48 @@
+// Colors
+$white: #fff;
+$black: #000000;
+
+$gray800: #333333;
+$gray600: #797979;
+$gray400: #999999;
+$gray200: #F3F3F3;
+
+$primary: #1b6280;
+$secondary: #228996;
+$tritiary: #7ebcc6;
+
+$red: #e34019;
+$orange: #e7a223;
+
+$industry: #0c4c67;
+$company: $primary;
+$team: $secondary;
+$product: $tritiary;
+$service: #8aced9;
+$offer: #9fdfe8;
+
+//Typography
+@font-face {
+  font-family: 'bebasneue';
+  src: url('~/static/fonts/bebasneue.eot'); /* IE9 Compat Modes */
+  src: url('~/static/fonts/bebasneue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~/static/fonts/bebasneue.woff') format('woff'), /* Pretty Modern Browsers */
+       url('~/static/fonts/bebasneue.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('~/static/fonts/bebasneue.otf') format('opentype');
+}
+
+$head-font: 'bebasneue', sans-serif;
+$base-font: 'Roboto', sans-serif;
+
+%widget-head-secondary-text {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+// Tablet, more than 576px
+@mixin tablet {
+  @media screen and (min-width:37.5rem) {
+    @content;
+  }
+}

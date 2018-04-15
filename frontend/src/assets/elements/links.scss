@@ -1,0 +1,21 @@
+.add-link {
+  @extend %widget-head-secondary-text;
+  color: $gray400;
+  cursor: pointer;
+
+  .add-icon {
+    margin-right: .25rem;
+  }
+
+  &:hover,
+  &.active {
+    color: $primary;
+  }
+}
+
+.link {
+  color: $primary;
+  font-size: 12px;
+  font-weight: 300;
+  cursor: pointer;
+}

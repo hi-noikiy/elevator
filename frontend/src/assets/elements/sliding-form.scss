@@ -1,0 +1,11 @@
+.sliding-form {
+  height: 0;
+  transform: scaleY(0);
+  opacity: 0;
+
+  &.active {
+    height: auto;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
