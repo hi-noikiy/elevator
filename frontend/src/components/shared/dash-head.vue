@@ -32,7 +32,7 @@ export default {
       this.navMenu = !this.navMenu
     }
   },
-  componets: {
+  components: {
     FontAwesomeIcon,
   },
 }

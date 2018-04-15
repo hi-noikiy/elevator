@@ -12,6 +12,9 @@
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 
 export default {
+  components: {
+    FontAwesomeIcon,
+  },
   data: function() {
     return {
       intercomStatus: false,
@@ -26,9 +29,6 @@ export default {
       this.intercomStatus = false
     }
   },
-  components: {
-    FontAwesomeIcon,
-  }
 }
 </script>
 

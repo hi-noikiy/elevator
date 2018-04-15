@@ -34,7 +34,7 @@ import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 export default {
   components: {
     floatLabel,
-    FontAwesomeIcon
+    FontAwesomeIcon,
   },
   data: () => {
     return {

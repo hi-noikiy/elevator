@@ -1,22 +1,22 @@
 <template lang="html">
   <div class="widget">
     <div class="container-grid-5">
-      <div class="avatar" v-for="(match, index) in industry" :key="index" @click="setMatchForm(match)" :class="match.type">
+      <div class="avatar" v-for="(match, index) in industry" :key="index + '-industry'" @click="setMatchForm(match)" :class="match.type">
         <span class="avatar-initials">{{match.name}}</span>
       </div>
-      <div class="avatar" v-for="(match, index) in company" :key="index" @click="setMatchForm(match)" :class="match.type">
+      <div class="avatar" v-for="(match, index) in company" :key="index + '-company'" @click="setMatchForm(match)" :class="match.type">
         <span class="avatar-initials">{{match.name}}</span>
       </div>
-      <div class="avatar" v-for="(match, index) in team" :key="index" @click="setMatchForm(match)" :class="match.type">
+      <div class="avatar" v-for="(match, index) in team" :key="index + '-team'" @click="setMatchForm(match)" :class="match.type">
         <span class="avatar-initials">{{match.name}}</span>
       </div>
-      <div class="avatar" v-for="(match, index) in product" :key="index" @click="setMatchForm(match)" :class="match.type">
+      <div class="avatar" v-for="(match, index) in product" :key="index + '-product'" @click="setMatchForm(match)" :class="match.type">
         <span class="avatar-initials">{{match.name}}</span>
       </div>
-      <div class="avatar" v-for="(match, index) in service" :key="index" @click="setMatchForm(match)" :class="match.type">
+      <div class="avatar" v-for="(match, index) in service" :key="index + '-service'" @click="setMatchForm(match)" :class="match.type">
         <span class="avatar-initials">{{match.name}}</span>
       </div>
-      <div class="avatar" v-for="(match, index) in offer" :key="index" @click="setMatchForm(match)" :class="match.type">
+      <div class="avatar" v-for="(match, index) in offer" :key="index + '-offer'" @click="setMatchForm(match)" :class="match.type">
         <span class="avatar-initials">{{match.name}}</span>
       </div>
     </div>
