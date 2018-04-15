@@ -1,5 +1,5 @@
 <template>
-<main class="container">
+<main class="login container">
   <div class="login-widget">
     <div class="login-logo-container">
       <h1 class="login-logo">Elevator</h1>
@@ -55,52 +55,4 @@ export default {
 <style lang="scss">
 @import '../assets/variables.scss';
 @import '../assets/styles.scss';
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.login-widget {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 1rem;
-    background-color: $white;
-
-    @include tablet {
-        padding: 2.5rem 3rem;
-    }
-}
-
-.login-logo-container {
-    width: 100%;
-    text-align: center;
-}
-
-.login-logo {
-    margin: 2rem 1rem;
-    font-size: 24px;
-}
-
-.float-label-container {
-    margin-bottom: 2rem;
-}
-
-.login-utilities {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.5rem;
-}
-
-.link {
-    margin: 0 0.5rem;
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
 </style>

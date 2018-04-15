@@ -24,11 +24,11 @@ $offer: #9fdfe8;
 //Typography
 @font-face {
   font-family: 'bebasneue';
-  src: url('~/static/fonts/bebasneue.eot'); /* IE9 Compat Modes */
-  src: url('~/static/fonts/bebasneue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('~/static/fonts/bebasneue.woff') format('woff'), /* Pretty Modern Browsers */
-       url('~/static/fonts/bebasneue.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('~/static/fonts/bebasneue.otf') format('opentype');
+  src: url('~/fonts/bebasneue.eot'); /* IE9 Compat Modes */
+  src: url('~/fonts/bebasneue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('~/fonts/bebasneue.woff') format('woff'), /* Pretty Modern Browsers */
+       url('~/fonts/bebasneue.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('~/fonts/bebasneue.otf') format('opentype');
 }
 
 $head-font: 'bebasneue', sans-serif;
