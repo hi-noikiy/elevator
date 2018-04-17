@@ -27,18 +27,3 @@ The brief collects information from the user about different entities related to
 Once the brief is completed, the user has the option of triggering an enrichment of all current Intercom contacts and/or uploading contacts from a CSV into Intercom with enrichments.
 
 In addition to enriching existing contacts, any new contacts acquired through Intercom or entered into Intercom, and any contacts within Intercom that are updated, are sent to the Inception platform for further enrichment.
-
-### Build
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-```
-
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
